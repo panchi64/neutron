@@ -1,10 +1,19 @@
-.cargo/
-*.pdb
-**/*.rs.bk
-debug/
+# Rust build artifacts
 target/
+**/*.rs.bk
+
+# Cargo
+.cargo/
+
+# Debug artifacts
+debug/
+*.pdb
+
+# Dependencies
 vendor/
 vendor.tar
+
+# Debian packaging
 debian/*
 !debian/changelog
 !debian/control
