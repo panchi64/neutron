@@ -2,6 +2,12 @@
 
 Neutron is a disk utility application built for the COSMIC desktop environment
 
+## About the Name
+
+"Neutron" is a reference to neutron stars - some of the densest objects known to exist. Just like these COSMIC phenomena pack enormous mass into a small space, disk drives nowadays achieve incredible data density, storing vast amounts of information in small/compact devices.
+
+It felt like a fitting name for a tool designed to work with these, ever increasing, data-hoarding hardware components.
+
 ## Installation
 
 A [justfile](./justfile) is included by default for the [casey/just][just] command runner.
