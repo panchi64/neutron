@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Neutron
+Comment=Neutron is a disk utility application built for the COSMIC desktop environment
+Type=Application
+Icon=com.franciscocasiano.cosmic-neutron
+Exec=neutron %F
+Terminal=false
+StartupNotify=true
+Categories=COSMIC
+Keywords=COSMIC
+MimeType=
