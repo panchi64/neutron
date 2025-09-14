@@ -16,8 +16,8 @@ const REPOSITORY: &str = env!("CARGO_PKG_REPOSITORY");
 const APP_ICON: &[u8] = include_bytes!("../resources/icons/hicolor/scalable/apps/icon.svg");
 
 /// The application model stores app-specific state used to describe its interface and
-/// drive its logic.
-pub struct AppModel {
+/// drive its logic.z
+pub struct ApplicationModel {
     /// Application state which is managed by the COSMIC runtime.
     core: cosmic::Core,
     /// Display a context drawer with the designated page if defined.
@@ -41,7 +41,7 @@ pub enum Message {
 }
 
 /// Create a COSMIC application from the app model
-impl cosmic::Application for AppModel {
+impl cosmic::Application for ApplicationModel {
     /// The async executor that will be used to run your application's commands.
     type Executor = cosmic::executor::Default;
 
@@ -87,7 +87,7 @@ impl cosmic::Application for AppModel {
             .icon(icon::from_name("applications-games-symbolic"));
 
         // Construct the app model with the runtime's core.
-        let mut app = AppModel {
+        let mut app = ApplicationModel {
             core,
             context_page: ContextPage::default(),
             nav,
@@ -239,7 +239,7 @@ impl cosmic::Application for AppModel {
     }
 }
 
-impl AppModel {
+impl ApplicationModel {
     /// The about page for this app.
     pub fn about(&self) -> Element<Message> {
         let cosmic_theme::Spacing { space_xxs, .. } = theme::active().cosmic().spacing;
