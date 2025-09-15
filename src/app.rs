@@ -110,6 +110,8 @@ impl cosmic::Application for ApplicationModel {
                     }
                 })
                 .unwrap_or_default(),
+            selected_disk: todo!(),
+            available_disks: todo!(),
         };
 
         // Create a startup command that sets the window title.
@@ -205,11 +207,9 @@ impl cosmic::Application for ApplicationModel {
             Message::OpenRepositoryUrl => {
                 _ = open::that_detached(REPOSITORY);
             }
-
             Message::SubscriptionChannel => {
                 // For example purposes only.
             }
-
             Message::ToggleContextPage(context_page) => {
                 if self.context_page == context_page {
                     // Close the context drawer if the toggled context page is the same.
@@ -220,11 +220,9 @@ impl cosmic::Application for ApplicationModel {
                     self.core.window.show_context = true;
                 }
             }
-
             Message::UpdateConfig(config) => {
                 self.config = config;
             }
-
             Message::LaunchUrl(url) => match open::that_detached(&url) {
                 Ok(()) => {}
                 Err(err) => {
