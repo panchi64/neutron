@@ -8,6 +8,12 @@ Neutron is a disk utility application built for the COSMIC desktop environment
 
 It felt like a fitting name for a tool designed to work with these, ever increasing, data-hoarding hardware components.
 
+## Help Guidelines
+
+I suspect that there is a lot of varied information available depending on the drive type.
+
+If you notice something is missing that affects compatibility or it doesn't work for you and it's because something isn't taken into account/consideration by the Disk model. Please feel free to create an issue, any help is greatly appreciated as I'm too broke to be able to buy one of of every drive type and then read through its metadata to figure out what is necessary. In the meantime I'll be leveraging the S.M.A.R.T. data.
+
 ## Installation
 
 A [justfile](./justfile) is included by default for the [casey/just][just] command runner.

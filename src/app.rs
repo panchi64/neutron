@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 
 use crate::config::Config;
+use crate::disk::Disk;
 use crate::fl;
 use cosmic::app::context_drawer;
 use cosmic::cosmic_config::{self, CosmicConfigEntry};
@@ -28,6 +29,10 @@ pub struct ApplicationModel {
     key_binds: HashMap<menu::KeyBind, MenuAction>,
     // Configuration data that persists between application runs.
     config: Config,
+
+    // Commonly used information across the application
+    selected_disk: Disk,
+    available_disks: Vec<Disk>,
 }
 
 /// Messages emitted by the application and its widgets.
