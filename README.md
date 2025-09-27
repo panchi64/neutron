@@ -8,6 +8,16 @@ Neutron is a disk utility application built for the COSMIC desktop environment
 
 It felt like a fitting name for a tool designed to work with these, ever increasing, data-hoarding hardware components.
 
+## What will it look like?
+
+The current goal is to make the application look like the following:
+
+<img width="1289" height="968" alt="image" src="https://github.com/user-attachments/assets/05e64239-ce64-4be4-8ec2-ca5c9d1d6f9d" />
+
+I created that dummy interface using React. To clarify for myself what I would find most useful for an application like this. Of course, there are many things that will have to be built from scratch, since neither `libcosmic` or `iced` have direct components or widgets necessary for the complex visuals or functionality I've created on the React UI. 
+
+I aim for a clear and easy-to-use experience for any user that uses the application!  
+
 ## Installation
 
 A [justfile](./justfile) is included by default for the [casey/just][just] command runner.
