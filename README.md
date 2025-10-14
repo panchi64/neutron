@@ -1,10 +1,10 @@
 # Neutron - 🚧 **Work in Progress** 🚧
 
-Neutron is a disk utility application built for the COSMIC desktop environment
+Neutron is a disk utility application
 
 ## About the Name
 
-"Neutron" is a reference to neutron stars - some of the densest objects known to exist. Just like these COSMIC phenomena pack enormous mass into a small space, disk drives nowadays achieve incredible data density, storing vast amounts of information in small/compact devices.
+"Neutron" is a reference to neutron stars - some of the densest objects known to exist. Just like these cosmic phenomena pack enormous mass into a small space, disk drives nowadays achieve incredible data density, storing vast amounts of information in small/compact devices.
 
 It felt like a fitting name for a tool designed to work with these, ever increasing, data-hoarding hardware components.
 
@@ -14,7 +14,7 @@ The current goal is to make the application look like the following:
 
 <img width="1289" height="968" alt="image" src="https://github.com/user-attachments/assets/05e64239-ce64-4be4-8ec2-ca5c9d1d6f9d" />
 
-I created that dummy interface using React. To clarify for myself what I would find most useful for an application like this. Of course, there are many things that will have to be built from scratch, since neither `libcosmic` or `iced` have direct components or widgets necessary for the complex visuals or functionality I've created on the React UI. 
+I created that dummy interface using React.
 
 I aim for a clear and easy-to-use experience for any user that uses the application!  
 
